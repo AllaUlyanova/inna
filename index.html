@@ -74,34 +74,118 @@
   <div class="wrap split">
     <div>
       <h2>Цены</h2>
-      <p class="lead" style="margin-top:1rem">Цены взяты из моего объявления на Авито. Итог зависит от объёма: числа операций, режима и состояния учёта.</p>
+      <p class="lead" style="margin-top:1rem">Два прайса и дополнительные услуги. Точная сумма зависит от режима, числа маркетплейсов и операций.</p>
       <p class="note">Помогу бесплатно зарегистрировать бизнес: выберем ОКВЭД и систему налогообложения, открою счёт в банке. Оплата вперёд, работаю по договору.</p>
     </div>
-    <div>
+    <div class="pricebox">
+      <div class="tabs" role="tablist" aria-label="Прайсы">
+        <button type="button" role="tab" class="tab" aria-selected="true" data-tab="p1">Прайс 1</button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-tab="p2">Прайс 2</button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-tab="p3">Дополнительно</button>
+      </div>
+      <div class="panel" id="p1" role="tabpanel">
+        <p class="sub">ИП на УСН «доходы» и АУСН</p>
       <div class="price">
-        <h3>Ведение учёта</h3>
+        <h3>Ежемесячное сопровождение, ИП на УСН «доходы»</h3>
         <dl>
-          <div class="row"><dt><mark>Бухгалтерия для маркетплейсов</mark></dt><dd>2 500 ₽</dd></div>
-          <div class="row"><dt>Налоговый учёт</dt><dd>2 500 ₽</dd></div>
-          <div class="row"><dt>Восстановление учёта</dt><dd>2 500 ₽</dd></div>
-          <div class="row"><dt>Расчёт зарплаты</dt><dd>750 ₽</dd></div>
-          <div class="row"><dt>Первичная документация</dt><dd>700 ₽</dd></div>
+          <div class="row"><dt>1 маркетплейс</dt><dd>3 750 ₽</dd></div>
+          <div class="row"><dt>2 маркетплейса</dt><dd>4 500 ₽</dd></div>
+          <div class="row"><dt>3 маркетплейса</dt><dd>5 000 ₽</dd></div>
+          <div class="row"><dt>4 маркетплейса</dt><dd>5 500 ₽</dd></div>
         </dl>
       </div>
       <div class="price">
-        <h3>Отчётность и налоги</h3>
+        <h3>АУСН, ежемесячный учёт</h3>
         <dl>
-          <div class="row"><dt>Отчётность ИП</dt><dd>1 250 ₽</dd></div>
-          <div class="row"><dt>Декларация по УСН</dt><dd>1 135 ₽</dd></div>
-          <div class="row"><dt>Нулевая отчётность</dt><dd>750 ₽</dd></div>
-          <div class="row"><dt>Налоговая оптимизация</dt><dd>1 500 ₽</dd></div>
-          <div class="row"><dt>Помощь при проверке</dt><dd>2 000 ₽</dd></div>
-          <div class="row"><dt>Декларация 3-НДФЛ</dt><dd>600 ₽</dd></div>
+          <div class="row"><dt>Доходы, 1 маркетплейс</dt><dd>3 250 ₽</dd></div>
+          <div class="row"><dt>Доходы, 2 маркетплейса</dt><dd>4 000 ₽</dd></div>
+          <div class="row"><dt>Доходы, 3 маркетплейса</dt><dd>4 750 ₽</dd></div>
+          <div class="row"><dt>Доходы минус расходы</dt><dd>от 7 500 ₽</dd></div>
         </dl>
-      </div>    </div>
+      </div>
+      <div class="price">
+        <h3>ИП на УСН с НДС, ежемесячно</h3>
+        <dl>
+          <div class="row"><dt>1 маркетплейс</dt><dd>7 500 ₽</dd></div>
+          <div class="row"><dt>2 маркетплейса</dt><dd>9 000 ₽</dd></div>
+          <div class="row"><dt>3 маркетплейса</dt><dd>10 000 ₽</dd></div>
+        </dl>
+      </div>
+      <div class="price">
+        <h3>Квартальный учёт, цена за квартал</h3>
+        <dl>
+          <div class="row"><dt>1 маркетплейс</dt><dd>7 500 ₽</dd></div>
+          <div class="row"><dt>2 маркетплейса</dt><dd>8 500 ₽</dd></div>
+          <div class="row"><dt>3 маркетплейса</dt><dd>10 000 ₽</dd></div>
+          <div class="row"><dt>4 маркетплейса</dt><dd>11 000 ₽</dd></div>
+        </dl>
+      </div>
+      <div class="price">
+        <h3>Восстановление учёта</h3>
+        <dl>
+          <div class="row"><dt>Месяц работы, 1 маркетплейс</dt><dd>1 250 – 1 500 ₽</dd></div>
+        </dl>
+      </div>
+      </div>
+      <div class="panel" id="p2" role="tabpanel">
+        <p class="sub">Другие режимы налогообложения</p>
+      <div class="price">
+        <h3>Базовая стоимость в месяц</h3>
+        <dl>
+          <div class="row"><dt>ИП на УСН «доходы»</dt><dd>от 2 500 ₽</dd></div>
+          <div class="row"><dt>ИП на патенте</dt><dd>от 2 000 ₽</dd></div>
+          <div class="row"><dt>ИП на АУСН</dt><dd>от 3 250 ₽</dd></div>
+          <div class="row"><dt>ИП на патенте и УСН</dt><dd>от 3 500 ₽</dd></div>
+          <div class="row"><dt>ИП на УСН «доходы минус расходы»</dt><dd>от 6 000 ₽</dd></div>
+          <div class="row"><dt>ООО на УСН «доходы»</dt><dd>от 7 500 ₽</dd></div>
+          <div class="row"><dt>ИП на ОСНО</dt><dd>от 7 500 ₽</dd></div>
+          <div class="row"><dt>ООО на УСН «доходы минус расходы»</dt><dd>от 10 000 ₽</dd></div>
+          <div class="row"><dt>ООО на ОСНО</dt><dd>от 12 500 ₽</dd></div>
+        </dl>
+      </div>
+      <div class="price">
+        <h3>Что добавляет к стоимости</h3>
+        <dl>
+          <div class="row"><dt>Маркетплейс</dt><dd>+1 000 ₽</dd></div>
+          <div class="row"><dt>Касса, платёжный агент, эквайринг</dt><dd>+1 000 ₽</dd></div>
+          <div class="row"><dt>Дополнительные расчётные счета</dt><dd>+250 ₽</dd></div>
+          <div class="row"><dt>Первичка до 15 документов</dt><dd>+2 500 ₽</dd></div>
+          <div class="row"><dt>Сотрудники, до 3 человек</dt><dd>+5 500 ₽</dd></div>
+          <div class="row"><dt>Товарный учёт, до 10 артикулов</dt><dd>+5 000 ₽</dd></div>
+          <div class="row"><dt>Отчётность в ФТС, за 1 отчёт</dt><dd>+2 000 ₽</dd></div>
+          <div class="row"><dt>Документы ВЭД (ЕАЭС)</dt><dd>от 5 000 ₽</dd></div>
+        </dl>
+      </div>
+      </div>
+      <div class="panel" id="p3" role="tabpanel">
+        <p class="sub">Дополнительные услуги</p>
+      <div class="price">
+        <h3>Услуги по запросу</h3>
+        <dl>
+          <div class="row"><dt>Разбор отчёта WB / Ozon</dt><dd>2 500 ₽</dd></div>
+          <div class="row"><dt>Сверка начислений и выплат WB</dt><dd>2 500 ₽</dd></div>
+          <div class="row"><dt>Сверка ЕНС</dt><dd>2 500 ₽</dd></div>
+          <div class="row"><dt>Просчёт выгодного режима</dt><dd>3 500 ₽</dd></div>
+          <div class="row"><dt>Работа с требованием ФНС (для клиентов)</dt><dd>1 500 ₽</dd></div>
+          <div class="row"><dt>Работа с требованием не по нашим расчётам</dt><dd>2 500 ₽</dd></div>
+          <div class="row"><dt>Оформление патента</dt><dd>2 000 ₽</dd></div>
+          <div class="row"><dt>Заявление на смену режима</dt><dd>1 500 ₽</dd></div>
+          <div class="row"><dt>Смена, добавление ОКВЭД</dt><dd>1 500 ₽</dd></div>
+          <div class="row"><dt>Продление, настройка ЭЦП</dt><dd>1 500 ₽</dd></div>
+          <div class="row"><dt>Регистрация ИП / ООО</dt><dd>от 1 750 ₽</dd></div>
+        </dl>
+      </div>
+      <div class="price">
+        <h3>Консультации</h3>
+        <dl>
+          <div class="row"><dt>Экспресс-консультация, 2–3 вопроса</dt><dd>2 000 ₽</dd></div>
+          <div class="row"><dt>Часовая консультация по налогообложению</dt><dd>5 000 ₽</dd></div>
+        </dl>
+      </div>
+      </div>
+    </div>
   </div>
 </section>
-
 <section id="how">
   <div class="wrap split split--flip">
     <div>
@@ -205,5 +289,9 @@
   </div>
 </footer>
 
-</body>
+<script>
+(function(){var t=document.querySelectorAll('.tab'),p=document.querySelectorAll('.panel');if(!t.length)return;document.documentElement.classList.add('js');
+function show(id){p.forEach(function(x){x.hidden=x.id!==id});t.forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===id)})}
+t.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.tab)})});show('p1');})();
+</script></body>
 </html>

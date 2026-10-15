@@ -189,3 +189,13 @@ footer p { max-width: 70ch; margin-bottom: 0.4rem; }
   .wrap { width: min(100% - 6rem, 78rem); }
 }
 /* широкий экран: конец */
+/* price tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: var(--space-md); }
+.tab { min-height: 2.75rem; padding: 0 1.1rem; font: 600 var(--text-sm)/1 var(--font-body); white-space: nowrap; background: transparent; color: var(--color-ink); border: 2px solid var(--color-ink); border-radius: var(--radius-sm); cursor: pointer; }
+.tab:hover { background: var(--color-surface); }
+.tab[aria-selected="true"] { background: var(--color-ink); color: var(--color-paper); }
+.sub { margin: 0 0 var(--space-sm); color: var(--color-ink-2); font-size: var(--text-sm); }
+.panel[hidden] { display: none; }
+.js .panel + .panel { margin-top: 0; }
+html:not(.js) .tabs { display: none; }
+html:not(.js) .panel { margin-bottom: var(--space-lg); }
