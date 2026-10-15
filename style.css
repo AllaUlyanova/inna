@@ -182,3 +182,10 @@ footer p { max-width: 70ch; margin-bottom: 0.4rem; }
 .final .btn--ghost:hover { background: var(--color-accent-ink); color: var(--color-accent); border-color: var(--color-accent-ink); }
 .final p + .btn, .final .btn { margin-top: var(--space-xs); }
 @media (max-width: 52rem) { .final .btn { display: flex; margin-left: 0; width: 100%; } }
+
+/* широкий экран: начало */
+@media (min-width: 1700px) {
+  html { font-size: max(16px, min(.9375vw, 1.9vh)); }
+  .wrap { width: min(100% - 6rem, 78rem); }
+}
+/* широкий экран: конец */
